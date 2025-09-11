@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: ?.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 
@@ -15,12 +15,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I am a junior researcher at Inria Paris, hosted by the Laboratoire Jacques-Louis Lions at Sorbonne Université.
+Megavolt is based at <a href="https://www.inria.fr/en/inria-paris">Inria Paris</a> and is a joint team involving <a href="https://www.inria.fr/en">Inria</a>, the <a href="https://www.ljll.fr/en/">Laboratoire Jacques-Louis Lions (UMR 7598)</a>, the <a href="https://www.lpsm.paris/">Laboratoire de Probabilités, Statistique et Modélisation (UMR 8001)</a>, and the <a href="https://scai.sorbonne-universite.fr/">Sorbonne Center for Artificial Intelligence</a>. The team is led by <a href="https://www.ljll.fr/despres/">Bruno Després</a>.
 
-I was previously a postdoc at MIT under <a class="publink" href="https://math.mit.edu/~rigollet/">Philippe Rigollet</a> and <a class="publink" href="https://math.mit.edu/icg/">Laurent Demanet</a>.
-I got my PhD from la Autónoma de Madrid in 2021. My advisor was <a class="publink" href="https://dcn.nat.fau.eu/enrique-zuazua/">Enrique Zuazua</a>. 
-
-I work in applied mathematics. My interests gravitate around problems arising in machine learning, control theory, and numerical analysis. 
 
 <div style="display: flex; flex-direction: column;">
   <div><span style="font-family: cursive;">news</span></div>
@@ -32,16 +28,6 @@ I work in applied mathematics. My interests gravitate around problems arising in
 
 
 
-
-<div style="display: flex; flex-direction: column;">
-  <div><span style="font-family: cursive;">contact</span></div>
-  <div style="margin-left: 2em;">
-    Office 15-25 320<br>
-    Laboratoire Jacques-Louis Lions<br>
-    4 Place Jussieu, 75005 Paris<br>
-    <code>email</code>: borjan dot geshkovski at inria dot fr
-  </div>
-</div>
 
 
 

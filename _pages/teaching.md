@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /teaching/
-title: teaching
+permalink: /team/
+title: team
 description: 
 nav: true
-nav_order: 6
+nav_order: 2
 ---
 
 <div style="display: flex; align-items: flex-start;">

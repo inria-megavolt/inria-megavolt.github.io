@@ -1,10 +1,10 @@
 ---
 layout: page
-permalink: /the_seminar/
-title: megavolt
+permalink: /seminar/
+title: seminar
 description: 
 nav: true
-nav_order: 7
+nav_order: 3
 ---
 
 I am part of the Inria research team <a href="https://www.inria.fr/en/megavolt">Megavolt</a>, and jointly with <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a>, we organize a monthly seminar on topics broadly linking analysis, learning, and algorithms.
