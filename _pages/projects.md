@@ -1,65 +1,130 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+permalink: /code/
+title: code
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+<style>
+:root {
+  --link-hover-color: #0070c9;  /* Replace with your real .publink hover color if different */
+}
+
+.repo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.repo-card {
+  flex: 1 1 calc(50% - 1em);
+  border: 1px solid #bbb;
+  border-radius: 0;
+  padding: 0.5em 1em;
+  height: 220px;
+  background-color: #fdfdfd;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: calc(50% - 1em);
+  overflow: hidden;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+  border-color: var(--link-hover-color);
+}
+
+.repo-card img {
+  max-width: 100%;
+  max-height: 130px;
+  object-fit: contain;
+  margin-bottom: 0.5em;
+  border-radius: 0;
+}
+
+.repo-card h3 {
+  margin: 0.5em 0;
+  font-size: 1.1em;
+}
+</style>
+
+
+
+
+<div class="repo-grid">
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/2025-transformers-frank-wolfe">
+        attention's forward pass and Frank-Wolfe
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/cells.gif' | relative_url }}" alt="fw preview">
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/KimiSun18/2024-gauss-kde-attention">
+        number of modes of Gaussian KDEs
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/5.gif' | relative_url }}" alt="gaussian KDE preview">
   </div>
-  {% endif %}
-  {% endfor %}
 
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/HugoKoubbi/2024-transformers-dotm">
+        dynamic metastability in the self-attention model
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/in-rainbows.png' | relative_url }}" alt="transformers metastability preview">
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/2023-transformers-rotf">
+        a mathematical perspective on Transformers
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/1.gif' | relative_url }}" alt="transformers ROTF preview">
   </div>
-  {% endif %}
-{% endif %}
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/2023-transformers">
+        emergence of clusters in self-attention dynamics
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/2.gif' | relative_url }}" alt="self-attention clusters preview">
+  </div>
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/leia">
+        neural ODEs
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/4.gif' | relative_url }}" alt="neural ODEs preview">
+  </div>
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/2022-stefan-control">
+        control of the Stefan problem
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/3.gif' |relative_url }}" alt="Stefan problem preview">
+  </div>
+
+  <div class="repo-card">
+    <h3>
+      <a class="publink" href="https://github.com/borjanG/2021-optimal-controller/">
+        optimal actuators via Brunovsky's normal form
+      </a>
+    </h3>
+    <img src="{{ '/assets/img/controller.png' |relative_url }}" alt="brunovsky">
+  </div>
+
 </div>
