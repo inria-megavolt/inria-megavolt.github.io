@@ -57,6 +57,15 @@ max_width: 800px
 
 # TODO: add layout settings (single page vs. multi-page)
 
+navbar:
+  - title: Home
+    url: /
+  - title: Team
+    url: /team/
+  - title: publications
+    url: /publications/
+
+
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
