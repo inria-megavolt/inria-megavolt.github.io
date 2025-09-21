@@ -9,35 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/al-folio/";
     },
-  },{id: "nav-papers",
-          title: "papers",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/papers/";
-          },
-        },{id: "nav-code",
-          title: "code",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/code/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/teaching/";
-          },
-        },{id: "nav-megavolt",
-          title: "megavolt",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/al-folio/the_seminar/";
-          },
-        },{id: "post-a-post-with-plotly-js",
+  },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
